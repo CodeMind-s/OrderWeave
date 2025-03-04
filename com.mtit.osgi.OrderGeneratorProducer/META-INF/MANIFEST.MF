@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OrderGenerator
+Bundle-SymbolicName: com.mtit.osgi.OrderGeneratorProducer
+Bundle-Version: 1.0.0.qualifier
+Export-Package: com.mtit.osgi.ordergeneratorproducer
+Bundle-Activator: com.mtit.osgi.ordergeneratorproducer.Activator
+Bundle-Vendor: MTIT
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Automatic-Module-Name: com.mtit.osgi.OrderGenerator
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PaymentProcessor
+Bundle-SymbolicName: com.mtit.osgi.PaymentProcessorConsumer
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.mtit.osgi.paymentprocessorconsumer.Activator
+Bundle-Vendor: MTIT
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Automatic-Module-Name: com.mtit.osgi.PaymentProcessor
+Import-Package: com.mtit.osgi.ordergeneratorproducer,
+ org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
