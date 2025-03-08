@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OrderGeneratorProducer
+Bundle-SymbolicName: OrderGeneratorProducer
+Bundle-Version: 1.0.0.qualifier
+Export-Package: ordergeneratorproducer
+Bundle-Activator: ordergeneratorproducer.OrderGeneratorActivator
+Bundle-RequiredExecutionEnvironment: JavaSE-20
+Automatic-Module-Name: OrderGeneratorProducer
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy

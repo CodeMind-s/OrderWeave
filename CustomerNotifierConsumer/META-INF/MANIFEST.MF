@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CustomerNotifierConsumer
+Bundle-SymbolicName: CustomerNotifierConsumer
+Bundle-Version: 1.0.0.qualifier
+Export-Package: customernotifierconsumer
+Bundle-Activator: customernotifierconsumer.CustomerNotifierActivator
+Bundle-RequiredExecutionEnvironment: JavaSE-20
+Automatic-Module-Name: CustomerNotifierConsumer
+Import-Package: org.osgi.framework;version="1.3.0", shippinghandlerconsumer, emailserviceproducer
+Bundle-ActivationPolicy: lazy

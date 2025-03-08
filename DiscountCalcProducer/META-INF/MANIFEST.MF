@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: DiscountCalcProducer
+Bundle-SymbolicName: DiscountCalcProducer
+Bundle-Version: 1.0.0.qualifier
+Export-Package: discountcalcproducer
+Bundle-Activator: discountcalcproducer.DiscountCalcActivator
+Bundle-RequiredExecutionEnvironment: JavaSE-20
+Automatic-Module-Name: DiscountCalcProducer
+Import-Package: org.osgi.framework;version="1.3.0", ordergeneratorproducer
+Bundle-ActivationPolicy: lazy
