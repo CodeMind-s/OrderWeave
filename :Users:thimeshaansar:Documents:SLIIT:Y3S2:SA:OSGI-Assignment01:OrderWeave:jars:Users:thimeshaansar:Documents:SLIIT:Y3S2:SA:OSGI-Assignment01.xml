@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project default="plugin_export" name="build">
-	<target name="plugin_export">
-		<pde.exportPlugins destination="/Users/thimeshaansar/Documents/SLIIT/Y3S2/SA/OSGI-Assignment01/OrderWeave/jars" exportSource="false" exportType="directory" plugins="CustomerNotifierConsumer,DiscountCalcProducer,EmailServiceProducer,InventoryTrackerProducer,OrderGeneratorProducer,OrderValidatorConsumer,PaymentProcessConsumer,ShippingHandlerConsumer" useJARFormat="true"/>
-	</target>
-</project>
