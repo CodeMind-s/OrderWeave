@@ -1,0 +1,19 @@
+	<project name="OrderWeave" default="build-jars" basedir=".">
+	    <property name="jars.dir" value="jars" />
+	    <property name="src.dir" value="src" />
+	    <property name="build.dir" value="bin" />
+
+	    <target name="build-jars">
+	        <mkdir dir="${jars.dir}" />
+	        
+	        <!-- Build each project -->
+	        <jar destfile="${jars.dir}/CustomerNotifierConsumer.jar" basedir="CustomerNotifierConsumer/${build.dir}" />
+	        <jar destfile="${jars.dir}/DiscountCalcProducer.jar" basedir="DiscountCalcProducer/${build.dir}" />
+	        <jar destfile="${jars.dir}/EmailServiceProducer.jar" basedir="EmailServiceProducer/${build.dir}" />
+	        <jar destfile="${jars.dir}/InventoryTrackerProducer.jar" basedir="InventoryTrackerProducer/${build.dir}" />
+	        <jar destfile="${jars.dir}/OrderGeneratorProducer.jar" basedir="OrderGeneratorProducer/${build.dir}" />
+	        <jar destfile="${jars.dir}/OrderValidatorConsumer.jar" basedir="OrderValidatorConsumer/${build.dir}" />
+	        <jar destfile="${jars.dir}/PaymentProcessConsumer.jar" basedir="PaymentProcessConsumer/${build.dir}" />
+	        <jar destfile="${jars.dir}/ShippingHandlerConsumer.jar" basedir="ShippingHandlerConsumer/${build.dir}" />
+	    </target>
+	</project>

@@ -13,7 +13,7 @@ public class DiscountCalcActivator implements BundleActivator {
     private ServiceReference<?> orderServiceRef;
 
     @Override
-    public void start(BundleContext context) {
+    public void start(BundleContext context) throws Exception{
         orderServiceRef = context.getServiceReference(OrderService.class.getName());
         OrderService orderService = (OrderService) context.getService(orderServiceRef);
         DiscountService service = new DiscountServiceImpl(orderService);
@@ -24,7 +24,7 @@ public class DiscountCalcActivator implements BundleActivator {
     }
 
     @Override
-    public void stop(BundleContext context) {
+    public void stop(BundleContext context) throws Exception{
         registration.unregister();
         context.ungetService(orderServiceRef);
         System.out.println("DiscountService unregistered");
