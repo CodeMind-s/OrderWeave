@@ -39,8 +39,9 @@ public class PaymentProcessActivator implements BundleActivator {
 			System.out.println("\nPayment processing completed successfully.\n");
 
 		} catch (Exception e) {
-			System.out.println("An error occurred while starting the Payment Processor Bundle: " + e.getMessage());
-			e.printStackTrace();
+			System.out.println("An error occurred while starting the Payment Processor Bundle: " + e.getMessage() + "\n");
+			System.out.println("PLEASE START ValidationService!");
+//			e.printStackTrace();
 		}
 
 		System.out.println("=====================================\n");

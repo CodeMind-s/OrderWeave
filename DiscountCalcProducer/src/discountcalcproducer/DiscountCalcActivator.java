@@ -38,8 +38,9 @@ public class DiscountCalcActivator implements BundleActivator {
             System.out.println("Discount calculation completed successfully.");
 
         } catch (Exception e) {
-            System.out.println("An error occurred while starting the Discount Calculator Bundle: " + e.getMessage());
-            e.printStackTrace();
+            System.out.println("An error occurred while starting the Discount Calculator Bundle: " + e.getMessage() + "\n");
+            System.out.println("PLEASE START OrderService!");
+//            e.printStackTrace();
         }
 
         System.out.println("=====================================\n");

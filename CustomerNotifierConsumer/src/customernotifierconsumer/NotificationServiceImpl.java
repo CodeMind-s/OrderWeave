@@ -19,9 +19,9 @@ public class NotificationServiceImpl implements NotificationService {
         shippingService.handleShipping(orderId); // Ensure shipping is done
         String to = "customer@example.com";
         String subject = "Order Update: " + orderId;
-        String body = "Your order " + orderId + ": " + message;
+        String body = "Your order: " + orderId + "\n" + message;
         emailService.sendEmail(to, subject, body);
-        System.out.println("Customer notified for order: " + orderId);
+        System.out.println("\nCustomer notified for order: " + orderId);
     }
 
 }

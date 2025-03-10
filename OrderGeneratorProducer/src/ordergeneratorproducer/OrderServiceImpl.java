@@ -7,7 +7,7 @@ public class OrderServiceImpl implements OrderService {
 
 	@Override
 	public String generateOrder() {
-		String orderId = "Order " + (int) (Math.random() * 1000);
+		String orderId = "ORD_ID_" + (int) (Math.random() * 1000);
 		
 		System.out.println("Generated order: " + orderId);
 		setItemCount(generateItemCount());
@@ -31,7 +31,7 @@ public class OrderServiceImpl implements OrderService {
 
 	@Override
 	public String getOrderDetails(String orderId) {
-		String details = "Details of " + orderId + " has Total Amount to be payed as "+amount;
+		String details = "Details of " + orderId + " has Total Amount to be paid: "+amount;
 		System.out.println("Retrieved details: " + details);
 		return details;
 	}

@@ -31,12 +31,12 @@ public class OrderGeneratorActivator implements BundleActivator {
 			int itemCount = service.getItemCount();
 
 			System.out.println("Order generated successfully. Order ID: " + orderId);
-			System.out.println("Total Amount to be Payed: " + amount);
+			System.out.println("Total Amount to be Paid: " + amount);
 			System.out.println("Number of items to be purchased: " + itemCount);
 
 		} catch (Exception e) {
 			System.out.println("An error occurred while starting the Order Generator Bundle: " + e.getMessage());
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 
 		System.out.println("=====================================\n");

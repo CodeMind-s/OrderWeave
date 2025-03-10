@@ -36,8 +36,9 @@ public class InventoryTrackerActivator implements BundleActivator {
             System.out.println("Inventory updated successfully for Order ID: "+orderId);
 
         } catch (Exception e) {
-            System.out.println("An error occurred while starting the Inventory Tracker Bundle: " + e.getMessage());
-            e.printStackTrace();
+            System.out.println("An error occurred while starting the Inventory Tracker Bundle: " + e.getMessage() + "\n");
+            System.out.println("PLEASE START PaymentService!");
+//            e.printStackTrace();
         }
 
         System.out.println("=====================================\n");

@@ -15,7 +15,7 @@ public class CustomerNotifierActivator implements BundleActivator {
 	private ServiceReference<?> shippingServiceRef;
 
 	@Override
-	public void start(BundleContext context) {
+	public void start(BundleContext context) throws Exception{
 		System.out.println("\n=====================================");
 		System.out.println("Starting Customer Notifier Bundle...");
 
@@ -36,19 +36,20 @@ public class CustomerNotifierActivator implements BundleActivator {
 			String orderId = shippingService.getOrderId();
 			// Simulate notification
 			System.out.println("\nSending a customer notification...");
-			service.notifyCustomer(orderId, "Your order has been shipped!");
-			System.out.println("Customer notification sent successfully for Order ID: "+ orderId);
+			service.notifyCustomer(orderId, "\tYour order has been shipped!");
+			System.out.println("Customer notification sent successfully for ID: "+ orderId);
 
 		} catch (Exception e) {
-			System.out.println("An error occurred while starting the Customer Notifier Bundle: " + e.getMessage());
-			e.printStackTrace();
+			System.out.println("An error occurred while starting the Customer Notifier Bundle: " + e.getMessage()+ "\n");
+			System.out.println("PLEASE START: EmailService!");
+//			e.printStackTrace();
 		}
 
 		System.out.println("=====================================\n");
 	}
 
 	@Override
-	public void stop(BundleContext context) {
+	public void stop(BundleContext context) throws Exception{
 		System.out.println("\n=====================================");
 		System.out.println("Stopping Customer Notifier Bundle...");
 

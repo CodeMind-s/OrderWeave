@@ -20,13 +20,13 @@ public class EmailServiceActivator implements BundleActivator {
             System.out.println("EmailService registered successfully.");
 
             // Simulate sending a test email
-            System.out.println("\nSending a test email...");
-            service.sendEmail("test@example.com", "Test", "Email service started");
-            System.out.println("Test email sent successfully to test@example.com");
+            System.out.println("\nReady to notify customers through email.");
+//            service.sendEmail("test@example.com", "Test", "Email service started");
+//            System.out.println("Test email sent successfully to test@example.com");
 
         } catch (Exception e) {
             System.out.println("An error occurred while starting the Email Service Bundle: " + e.getMessage());
-            e.printStackTrace();
+//            e.printStackTrace();
         }
 
         System.out.println("=====================================\n");

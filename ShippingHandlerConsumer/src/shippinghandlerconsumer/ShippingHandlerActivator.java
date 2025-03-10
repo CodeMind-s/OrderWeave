@@ -36,8 +36,9 @@ public class ShippingHandlerActivator implements BundleActivator {
 			System.out.println("Shipping process initiated for Order ID: " + orderId);
 
 		} catch (Exception e) {
-			System.out.println("An error occurred while starting the Shipping Handler Bundle: " + e.getMessage());
-			e.printStackTrace();
+			System.out.println("An error occurred while starting the Shipping Handler Bundle: " + e.getMessage() + "\n");
+			System.out.println("PLEASE START InventoryService!");
+//			e.printStackTrace();
 		}
 
 		System.out.println("=====================================\n");

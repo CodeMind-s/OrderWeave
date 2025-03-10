@@ -50,8 +50,9 @@ public class OrderValidatorActivator implements BundleActivator {
 			System.out.println("Order validation completed successfully.");
 
 		} catch (Exception e) {
-			System.out.println("An error occurred while starting the Order Validator Bundle: " + e.getMessage());
-			e.printStackTrace();
+			System.out.println("An error occurred while starting the Order Validator Bundle: " + e.getMessage() + "\n");
+			System.out.println("PLEASE START OrderService FIRST! AND START DiscountService!");
+//			e.printStackTrace();
 		}
 
 		System.out.println("=====================================\n");
